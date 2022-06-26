@@ -169,3 +169,50 @@ for (let i = 0; i <= max; i += 1){
 }
 console.log(total);*/
 
+// // // потрібно  порахувати за скільки днів Равлик зможе виповзти з колодязя
+// // // в день Равлик проповзає на 7 м в гору, а за ніч опускається на 2 м в низ
+// // // 42 м, виповзе за 8 днів
+// // // 17 м, виповзе за 3 дні
+// // // 18 м, виповзе за 4 дні
+/*const up = 7;
+const down = 2;
+const deep = 42;
+let days = 0;
+let path = 0;
+while (path < deep) {
+    days += 1;
+    path += up;
+    if (path < deep) {
+        path -= down;
+    }
+}
+console.log(days);*/
+
+const input = Math.ceil(Number(prompt('Введіть поверх')));
+console.log(input);
+if (isNaN(input)) {
+    alert('Не число');
+
+}
+const free = 0;
+const low = 20;
+const middle = 30;
+const high = 40;
+let total = 0;
+let message;
+
+for (let i = 1; i <= input; i += 1){
+    if (input === 0 || input === 1) {
+        message = "безкоштовно";
+        break;
+    }
+    if (i >= 2 && i <= 4) {
+        total += low;
+    } else if (i >= 5 && i <= 7) {
+        total += middle;
+    } else if (i >= 8) {
+        total += high;
+    }
+    message = `Вортість доставки на${input} повех  ${total} гривень`
+}
+alert(message);
