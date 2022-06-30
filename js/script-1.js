@@ -188,31 +188,31 @@ while (path < deep) {
 }
 console.log(days);*/
 
-const input = Math.ceil(Number(prompt('Введіть поверх')));
-console.log(input);
-if (isNaN(input)) {
-    alert('Не число');
+// const input = Math.ceil(Number(prompt('Введіть поверх')));
+// console.log(input);
+// if (isNaN(input)) {
+//     alert('Не число');
 
-}
-const free = 0;
-const low = 20;
-const middle = 30;
-const high = 40;
-let total = 0;
-let message;
+// }
+// const free = 0;
+// const low = 20;
+// const middle = 30;
+// const high = 40;
+// let total = 0;
+// let message;
 
-for (let i = 1; i <= input; i += 1){
-    if (input === 0 || input === 1) {
-        message = "безкоштовно";
-        break;
-    }
-    if (i >= 2 && i <= 4) {
-        total += low;
-    } else if (i >= 5 && i <= 7) {
-        total += middle;
-    } else if (i >= 8) {
-        total += high;
-    }
-    message = `Вортість доставки на${input} повех  ${total} гривень`
-}
-alert(message);
+// for (let i = 1; i <= input; i += 1){
+//     if (input === 0 || input === 1) {
+//         message = "безкоштовно";
+//         break;
+//     }
+//     if (i >= 2 && i <= 4) {
+//         total += low;
+//     } else if (i >= 5 && i <= 7) {
+//         total += middle;
+//     } else if (i >= 8) {
+//         total += high;
+//     }
+//     message = `Вортість доставки на${input} повех  ${total} гривень`
+// }
+// alert(message);
