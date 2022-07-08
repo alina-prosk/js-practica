@@ -156,18 +156,20 @@ for (let i = 0; i <= employees; i += 1){
 }
 console.log('Total; ', totalSalary);*/
 
-/*const min = 5;
-const max = 17;
-let total = 0;
+// const min = 5;
+// const max = 17;
+// let total = 0;
 
-for (let i = 0; i <= max; i += 1){
-    console.log(i);
-    if (i % 2 === 0) {
-        console.log(`четне: `, i);
-        total += i;
-    }
-}
-console.log(total);*/
+
+// for (let i = 0; i <= max; i += 1){
+//     console.log(i);
+//     if (i % 2 === 0) {
+//         console.log(`четне: `, i);
+//         // total += i;
+//     }
+
+// }
+// console.log(total);
 
 // // // потрібно  порахувати за скільки днів Равлик зможе виповзти з колодязя
 // // // в день Равлик проповзає на 7 м в гору, а за ніч опускається на 2 м в низ
