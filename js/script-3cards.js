@@ -42,7 +42,6 @@
 //         }
 //         return total;
 //     },
-    
 //     increaseQuantity(productName) { },
 //     decreaseQuantity(productName) { },
 // };
