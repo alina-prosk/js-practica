@@ -133,7 +133,7 @@
   
 // }
 // // шукаємо друга
-// const findByName = function ( allFriends, friendName ) { 
+// const findByName = function ( allFriends, friendName ) {
 //     for (const friend of allFriends) {
 
 //         if (friend.name === friendName) {
@@ -199,7 +199,113 @@
 
 
 
+// 444444444444444444444444444444444
+// function createProduct(obj, callback) {
+//     const product = {
+//         id: Math.random(),
+//         ...obj
+//     }
+//     callback(product)
+// }
+// function logProduct(product) {
+//     console.log(product);
+// }
+
+// function logTotalProduct({price, create}) {
+//     console.log('sum', price * create)
+// }
+// const p = {
+//     model: "iphon",
+//     price: 6700,
+//     create: 8
+// }
+
+// createProduct(p, logProduct)
+// createProduct(p, logTotalProduct)
+
+/** 
+ *  Example 3 - Коллбек функции
+ * Напишите функцию each(array, callback), 
+ * которая первым параметром ожидает массив, а вторым - функцию, 
+ * которая применится к каждому элементу массива. 
+ * Функция each должна вернуть новый массив, 
+ * элементами которого будут результаты вызова коллбека.
+*/
+
+// const users = [
+//     {name: 'David', age: 34},
+//     {name: 'Dana', age: 23}
+// ]
+
+// function each(arr, callback) {
+//     const newArray = []
+
+//     for (let i = 0; i < arr.length; i += 1) {
+//         const callbackResult = callback(arr[i], i, arr)
+//         newArray.push(callbackResult)
+        
+//     }
+// console.log(newArray)
+//     return newArray
+// }
+
+// // function getName(user) {
+// //     return user.name
+// // }
+
+// // function getNameAndAge(user) {
+// //     return `${user.name} is ${user.age} old`
+// // }
+// // each(users, getNameAndAge)
+
+// // заміна на стрілочну функцію
+// each(users, (user) => user.name)
+// each(users, (user) => `${user.name} is ${user.age} old`)
 
 
+/**
+ * Example 4 - Коллбек функции
+ * Добавьте объекту account методы 
+ * withdraw(amount, onSuccess, onError) и 
+ * deposit(amount, onSuccess, onError), 
+ * где первый параметр это сумма операции, а второй и третий - колбеки.
+ * Метод withdraw вызывает onError если amount больше 
+ * TRANSACTION_LIMIT или this.balance, 
+ * и onSuccess в противном случае.
+ * Метод deposit вызывает onError если amount больше 
+ * TRANSACTION_LIMIT или меньше либо равен нулю, 
+ * и onSuccess в противном случае.
+ */
 
+// const TRANSACTION_LIMIT = 1000;
+
+// const account = {
+//     username: 'Jacob',
+//     balance: 400,
+
+//     deposit(amount, onSuccess, onError) {
+        
+//         if (amount > TRANSACTION_LIMIT || amount <= 0) {
+//             return onError('error')
+//         }
+//         this.balance += amount
+
+//         onSuccess(this.balance)
+//     },
+//     withdraw(amount, onSuccess, onError) {
+
+//         if (amount > TRANSACTION_LIMIT || amount > this.deposit) {
+//             return onError('error')
+//         }
+//         this.balance -= amount
+
+//         onSuccess(this.balance)
+//     },
+// }
+
+// const onSuccessHandler =(balance) => console.log(balance)
+// const onErrorHandler = (error) => console.log(error)
+
+// account.deposit(2000, onErrorHandler, onSuccessHandler)
+// account.deposit(1000, onErrorHandler, onSuccessHandler)
 
