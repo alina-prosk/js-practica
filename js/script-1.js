@@ -218,3 +218,385 @@ console.log(days);*/
 //     message = `Вортість доставки на${input} повех  ${total} гривень`
 // }
 // alert(message);
+
+
+
+
+
+// const myFriends = {
+//     name: 'kate',
+//     age: 23
+// }
+
+// myFriends.city = 'London';
+// myFriends.country = 'UK';
+
+// delete myFriends.country;
+// delete myFriends.city
+
+// const myFriendsnewKey = 'city';
+// myFriends[myFriendsnewKey] = 'London';
+// myFriends[myFriendsnewKey] = 'Kiev'
+
+// console.log(myFriends)
+
+
+
+// const name = 'Alina';
+// const age = 35;
+
+// const myInfo = {
+//     age,
+//     name,
+//     femeli: true,
+//     children() {
+//         console.log('Ilya, Liza');
+//     }
+// }
+
+// // const myInfo2 = { ...myInfo }
+// const myInfo2 = JSON.parse(JSON.stringify(myInfo))
+// myInfo2.age = 54;
+// console.log(myInfo2);
+// console.log(myInfo);
+
+
+// const persons = {
+//     name: 'ric',
+//     age:23
+// }
+
+// function personTwo(person) {
+//     const newperson = { ...person }
+//     newperson.age += 1,
+//     newperson.work = true
+//     return newperson
+// }
+
+// const newperson = personTwo(persons)
+// console.log(newperson)
+// console.log(persons)
+// console.log(newperson.age)
+
+
+// function myName() {
+//     console.log('Alina')
+// }
+
+// setTimeout(myName, 2000)
+
+
+// const a = 3
+// function myFn() {
+//     function innerFn() {
+//         console.log(a)
+//     }
+//     innerFn()
+// }
+// myFn()
+
+
+
+// let a
+// let b
+// function myFn() {
+//     let b
+//     let c = 4
+//     b = 5
+//     a = true
+//     console.log(a)
+//     console.log(c)
+//     console.log(b)
+// }
+// myFn()
+// console.log(a)
+
+
+// function multy(a, b, c) {
+//   return a * b * c
+// }
+// let result = multy(3, 2, 3)
+// console.log(result)
+
+// function abc(a = 2, b = 3, c = 4) {
+//     console.log(`A = ${a}, B = ${b}, C = ${c}`)
+//     // for (let i = a; i < c; i += b){
+//     //     console.log(i)
+//     }
+// }
+// abc(3, 2, 4)
+
+
+
+// const propName = "name";
+// const user = {
+//     age: 25,
+// [propName]: "Генрі Сибола"
+// };
+// console.log(user.name);
+
+// const getBooks = {
+//     book: ["The Last Kingdom", "Dream Guardian"],
+//     getteryBook() {
+//         console.log(this);
+//     },
+//     addBook(bookName) {
+//         console.log('newbook');
+//     },
+// };
+// getBooks.getteryBook();
+// getBooks.addBook();
+
+
+// const getBooks = {
+//     books: ["The Last Kingdom", "Dream Guardian"],
+//     getteryBook() {
+//         return this.books;
+//     },
+//     addBook(bookName) {
+//       this.books.push(bookName);
+//     },
+//     removeBook(bookName) {
+//         const bookIndex = this.books.indexOf(bookName);
+//         this.books.splice(bookIndex, 1);
+//     },
+// };
+// console.log(getBooks.getteryBook());
+// getBooks.addBook("The Mist");
+// console.log(getBooks.getteryBook());
+// getBooks.removeBook("Dream Guardian");
+// console.log(getBooks.getteryBook());
+
+
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "На березі спокійних вод",
+//     author: "Роберт Шеклі",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "Сон смішної людини",
+//     author: "Федір Достоєвський",
+//     rating: 7.75,
+//   },
+// ];
+
+// const booksName = [];
+
+// for (const book of books) {
+// booksName.push(book.title)
+// }
+// console.log(booksName);
+
+// let totalRating = 0;
+
+// for (const book of books) {
+//     totalRating += book.rating;
+// }
+// const averageRating = (totalRating / books.length).toFixed(1);
+// console.log(averageRating);
+
+
+
+
+
+// const temps = [14, -4, 25, 8, 11];
+// console.log(...temps);
+// console.log(Math.max(...temps))
+
+// const lastWeekTemps = [14, 25, 11];
+// const currentWeekTemps = [23, 17, 18];
+// const allTemps = [...lastWeekTemps, ...currentWeekTemps];
+// console.log(allTemps);
+
+
+
+// const button = {
+//     width: 370,
+//     text: 'Buy'
+// }
+
+// const newButton = {
+//     ...button,
+//     color: 'red',
+//     text: 'Hey'
+// }
+// console.table(newButton);
+
+// const myltyByFactory = (value, multy = 2) => console.log(value * multy)
+
+// myltyByFactory(2)
+// myltyByFactory(5, 6)
+// myltyByFactory(6, 1)
+
+// const newPost = (post, addedAAt = Date()) => ({
+//     ...post,
+//     addedAAt
+// })
+// const firstPost = {
+//     id: 1,
+//     author: 'Alina'
+// }
+
+// console.table(newPost(firstPost));
+
+// const fnError = () =>{
+// throw new error('some error')
+// }
+
+// try{
+//     fnError()
+// } catch (error) {
+//     console.log(error.message)
+// }
+// console.log('Continue...')
+
+
+// const myArr = [1, 2, 3]
+// console.log(myArr)
+// myArr.forEach(el => console.log(el * 2))
+
+// const myArr = [1, 2, 3]
+// console.log(myArr)
+// const newArr = myArr.map(el => el * 3)
+// console.log(newArr)
+
+
+// const sumNombers = (a, b) => {
+//     if (typeof a !== 'number' || typeof b !== 'number') {
+//         return 'not number'
+//     }
+
+//     if (a <= 0 || b <= 0) {
+//         return 'not positive'
+//     }
+
+//     return a + b
+// }
+// console.log(sumNombers(5, 6));
+// console.log(sumNombers(6, 'a'));
+// console.log(sumNombers(-1, 2));
+
+
+// const myArr = ['first', 'second', 'third'];
+// myArr.forEach((el, index) => {
+//     console.log(el, index);
+// })
+
+
+// const myObject = {
+//     a: 1,
+//     b: true,
+//     c: 'hey'
+// }
+
+// // for (const key in myObject) {
+// //     console.log(key)
+// // }
+
+// Object.values(myObject).forEach(value => {
+//     console.log(value)
+// })
+
+
+// class Comment {
+//     constructor(text) {
+//         this.text = text
+//         this.votesQty = 0
+//     }
+
+//     upvote() {
+//         this.votesQty += 1
+//     }
+// }
+
+// const firstComment = new Comment('First comment')
+// const secondComment = new Comment('Second comment')
+
+
+// class Comment {
+//     constructor(text) {
+//         this.text = text
+//         this.votesQty = 0
+//     }
+
+//     upvote() {
+//         this.votesQty += 1
+//     }
+
+//     static mergeComments(first, second) {
+//         return `${first} ${second}`
+//     }
+// }
+// // Comment.mergeComments()
+
+// class NumbersArray extends Array{
+//     sum() {
+//         return this.reduce((acc, el) => acc += el, 0)
+//     }
+// }
+// const myArr = new NumbersArray(2, 4, 6)
+// const youArr = new NumbersArray(1, 2 ,3)
+// console.log(myArr.sum())
+// console.log(youArr.sum())
+
+
+// fetch('https://jsonplaceholder.typicode.com/todos/3')
+// .then(response => response.json())
+// .then(json => console.log(json))
+// .catch(err => console.error(err))
+
+// // створили функцію для визову
+// const getData = (url) =>
+//     new Promise((resolve, reject) =>
+//         fetch(url)
+//             .then(response => response.json())
+//             .then(json => resolve(json))
+//             .catch(err => reject(err))
+//     )
+
+//     // в іншому файлі викликаємо цю функцію(скільки потрібно разів)
+// getData('https://jsonplaceholder.typicode.com/todos/3')
+//     .then(data => console.log(data))
+//     .catch(err => console.log(err.message))
+
+
+// const asyncFn = async () => {
+//     return 'Sucsesful'
+// }
+// asyncFn()
+// .then(value => console.log(value))
+
+// const timerPromise = () =>
+//     new Promise((resolve, reject) =>
+//         setTimeout(() => resolve(), 2000))
+
+// const asyncFn = async () => {
+//     console.log('Timer starts')
+//     const startTime = performance.now()
+//     await timerPromise()
+//     const endTime = performance.now()
+//     console.log('Timer ended', endTime - startTime)
+// }
+// asyncFn()
+
+
+// // асинхронна функція
+// const getData = async () => {
+//     const res = await fetch(url)
+//     const json = await res.json()
+//     return json
+// }
+// const url = 'https://jsonplaceholder.typicode.com/todos/1'
+// try{
+// const data = await getData(url)
+//     console.log(data)
+// } catch (err) {
+//     console.log(err.message)
+// }
