@@ -600,3 +600,610 @@ console.log(days);*/
 // } catch (err) {
 //     console.log(err.message)
 // }
+
+
+
+
+
+
+// const user = {
+//     fullName: 'Mango',
+//     shoWName(){
+//         console.log('this: ', this);
+//         console.log('this.fullName: ', this.fullName);
+
+//         const inner = () => {
+//             console.log('this is inner: ', this);
+//         };
+//         inner();
+//     },
+// };
+// user.shoWName();
+
+// const numbers = [1, 2, 5, 3,];
+// const res = numbers
+//     .filter((num) => num >= 2)
+//     .map((num) => num * 2)
+//     .sort((a, b) => a + b)
+    
+// console.log(res);
+
+
+// const genres = ['Jazz', 'Blues'];
+// genres.push('Rock-n-Roll');
+// genres.shift();
+// console.log(genres);
+// Выведите в консоль последний элемент массива. Код должен работать для массива произвольной длины.
+
+
+// const values = [8, 11];
+// let total = 0;
+
+// for (const value of values) {
+//     total += value*2;
+    
+// }
+// console.log(total)
+
+// const fruits = ['🍎', '🍇', '🍑', '🍌', '🍋'];st
+
+// for (const fruit of fruits) {
+//   console.log(fruit)
+    
+// }
+// const string = 'Welcome to the future'; зробити 6 задачу
+
+// const numbers = [2, 17, 94, 1, 23, 37];
+// let min = Math.min(...numbers);
+// console.log(min);
+
+// function min(a, b) {
+//     return Math.min(a, b)
+// }
+// console.log(min(9, 3))
+
+// function logItems(items) {}
+
+// logItems(['Mango', 'Poly', 'Ajax']);
+// logItems(['🍎', '🍇', '🍑', '🍌', '🍋']);
+
+
+// const user = {
+//     name: 'Mango',
+//     age: 20,
+//     hobby: 'html',
+//     premium: true,
+//     arr: [123, 123]
+// };
+// user.mood = 'happy';
+// console.log(user)
+// const key = Object.keys(user)
+// console.log(key)
+// // console.log(Object.keys(user))
+
+// const stones = [
+//     { name: 'Изумруд', price: 1300, quantity: 4 },
+//     { name: 'Бриллиант', price: 2700, quantity: 3 },
+//     { name: 'Сапфир', price: 400, quantity: 7 },
+//     { name: 'Щебень', price: 200, quantity: 2 },
+// ];
+
+// function calcTotalPrice(stones, stoneName) {
+//     let sum = 0
+
+//     for (let stone of stones) {
+       
+//         if (stone.name === stoneName) {
+//             console.log(stone);
+//             sum = stone.price * stone.quantity
+//             break
+//         }
+//     }
+//     return sum
+// }
+
+// console.log(calcTotalPrice(stones, 'Бриллиант'))
+
+// function calAverage() {
+//     let total = 0
+//     for (let argument of arguments) {
+        
+//     total += argument
+//     }
+//     return total/arguments.length
+// }
+
+// console.log(calAverage(1, 2, 3, 4)); // 2.5
+// console.log(calAverage(14, 8, 2)); // 8
+// console.log(calAverage(27, 43, 2, 8, 36)); // 23.2
+
+
+
+// function compare(firstNumber, secondNumber, operation, result) {
+//     const num1 = Number(firstNumber);
+//     const num2 = Number(secondNumber);
+//     const res = Number(result);
+
+// if (isNaN(num1) || isNaN(num2) || isNaN(res)) return false
+    
+//     const operationDic = {
+//         '+': function (a, b) {return a + b },
+//         '-': function (a, b) { return a - b },
+//         '/': function (a, b) { return a / b },
+//         '*': function (a, b) {return a * b  }
+//     }
+//     console.log(operationDic[operation](num1, num2))
+    
+//     // switch (operation) {
+//     //     case '+':
+//     //         return num1 + num2 === res
+    
+//     //     case '-':
+//     //         return num1 - num2 === res
+        
+//     //     case '*':
+//     //         return num1 * num2 === res
+    
+//     //     case '/':
+//     //         return num1 / num2 === res
+
+//     //     default:
+//     //         return false
+//     // }
+
+// }
+
+// console.log(compare("3", "6", "*", "18"))
+
+
+
+
+// НЕ ЗРОБЛЕНА!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// const Transaction = {
+//     DEPOSIT: 'deposit',
+//     WITHDRAW: 'withdraw',
+// };
+// /*
+// * Каждая транзакция это объект со свойствами: id, type и amount
+// */
+
+// const account = {
+//     // Текущий баланс счета
+//     balance: 0,
+
+//     // История транзакций
+//     transactions: [],
+
+//     /*
+//     * Метод создает и возвращает объект транзакции.
+//     * Принимает сумму и тип транзакции.
+//     */
+//     createTransaction(amount, type) {
+//         return {
+//             id: this.transactions.length + 1,
+//             amount,
+//             type
+// }
+//     }
+// },
+
+// deposit(amount) {
+        
+//     },
+
+
+
+// const cars = [
+//   { make: 'Honda', model: 'CR-V', type: 'suv', amount: 14, price: 24045, onSale: true },
+//   { make: 'Honda', model: 'Accord', type: 'sedan', amount: 2, price: 22455, onSale: true },
+//   { make: 'Mazda', model: 'Mazda 6', type: 'sedan', amount: 8, price: 24195, onSale: false },
+//   { make: 'Mazda', model: 'CX-9', type: 'suv', amount: 7, price: 31520, onSale: true },
+//   { make: 'Toyota', model: '4Runner', type: 'suv', amount: 19, price: 34210, onSale: false },
+//   { make: 'Toyota', model: 'Sequoia', type: 'suv', amount: 16, price: 45560, onSale: false },
+//   { make: 'Toyota', model: 'Tacoma', type: 'truck', amount: 4, price: 24320, onSale: true },
+//   { make: 'Ford', model: 'F-150', type: 'truck', amount: 11, price: 27110, onSale: true },
+//   { make: 'Ford', model: 'Fusion', type: 'sedan', amount: 13, price: 22120, onSale: true },
+//   { make: 'Ford', model: 'Explorer', type: 'suv', amount: 6, price: 31660, onSale: false }
+// ];
+
+// const getModels = cars => cars.map(car => car.model)
+// або
+// const getModels = cars => {
+//     const models = cars.map(car => car.model)
+//     return models
+// };
+
+// console.table(getModels(cars));
+
+
+// const makeCarsWithDiscount = (cars, discount) => {
+//     return cars.map(car => {
+//         const carCopy = {...car}
+//         const newPrice = carCopy.price - (carCopy.price * discount)
+//         carCopy.price = newPrice
+//         return  carCopy
+// } )
+// };
+
+
+// const makeCarsWithDiscount = (cars, discount) => {
+//     return cars.map(car => {
+//         const carCopy = {...car}
+//         const newPrice = carCopy.price - (carCopy.price * discount)
+//         carCopy.price = newPrice
+//         return  carCopy
+// } )
+// };
+
+// console.table(makeCarsWithDiscount(cars, 0.2));
+// // console.table(makeCarsWithDiscount(cars, 0.4));
+
+// const filterByPrice = (cars, threshold) => cars.filter(car => car.price < threshold);
+
+// console.table(filterByPrice(cars, 30000));
+// console.table(filterByPrice(cars, 25000));
+
+
+
+// const getCarsWithDiscount = cars => cars.filter(car => car.onSale === true);
+
+// console.table(getCarsWithDiscount(cars));
+
+
+// const getCarsWithType = (cars, type) => cars.filter(car => car.type === type);
+
+// console.table(getCarsWithType(cars, 'suv'));
+// console.table(getCarsWithType(cars, 'sedan'));
+
+
+// const getCarByModel = (cars, model) => cars.find(car => car.model === model);
+
+// console.log(getCarByModel(cars, 'F-150'));
+// console.log(getCarByModel(cars, 'CX-9'));
+
+
+// const sortByAscendingAmount = cars.sort((firstAmount, secondAmount) => firstAmount.amount - secondAmount.amount);
+
+// console.table(sortByAscendingAmount);
+
+// const sortByDescendingPrice = cars => cars.sort((firstPrise, secondePrice) => secondePrice.price - firstPrise.price);
+
+// console.table(sortByDescendingPrice(cars));
+
+// const sortByModel = (cars, order) => cars.sort((firstName, secondName) => {
+//     return order === 'asc' ? firstName.make.localeCompare(secondName.make) : secondName.make.localeCompare(firstName.make)
+// }
+    
+// );
+
+// console.table(sortByModel(cars, 'asc'));
+// console.table(sortByModel(cars, 'desc'));
+
+
+// const getTotalAmount = cars.reduce((total, car) => total + car.amount, 0);
+
+// console.log(getTotalAmount);
+
+
+// const getModelsOnSale = (cars, onSale) => cars
+//     .map(car => car)
+//     .filter(car => car.onSale === true)
+//     .sort((a, b) => a.price - b.price);
+
+// console.table(getModelsOnSale(cars));
+
+// const numbers = [5, 10, 15, 20, 25];
+
+// const logMessage = (number, index) => {
+//   console.log(`Індекс ${index}, значення ${number}`);
+// };
+
+// numbers.forEach(logMessage);
+
+
+
+
+/**-----------------------------------------------------------------------THIS----------------------------------------------------------- */
+
+// const coudThis = function (e, x) {
+//     console.log(e, x)
+// console.log(this)
+// }
+// const coundA = {
+//     a: 7,
+//     b: 4
+// }
+
+// const coundB = {
+//     a: 17,
+//     b: 14
+// };
+
+// coudThis.call(coundA, 2, 6)
+// coudThis.apply(coundB)
+
+
+// const changeColor = function (color) {
+//     console.log(this);
+//     this.color = color;
+// };
+
+// const hat = {
+//     color: 'red'
+// }
+
+// const sweeter = {
+//     color: 'pink'
+// }
+// changeColor.call(hat, 'blek')
+// changeColor.call(sweeter, 'blue')
+
+
+/**
+ * TODO Example #1
+ * Создать объект, который описывает ширину и высоту
+ * прямоугольника, а также может посчитать площадь фигуры:
+ * const rectangle = {width:..., height:..., getSquare:...};
+ */
+
+// const rectangle = {
+//     width: 10,
+//     height: 10,
+//     getSquare() {
+//         return this.height * this.width;
+//     }
+// }
+//     console.log(rectangle.getSquare());
+
+
+/**
+ * TODO Example #2
+ * Создать объект, у которого будет цена товара и его скидка, а также
+ * два метода: для получения цены и для расчета цены с учетом скидки:
+ */
+
+// const product = {
+//     price: 100,
+//     discount: '15%',
+//     getPrice() {
+//         return this.price;
+//     },
+//     getPriceWidthDiscount() {
+//         const discount = parseInt(this.discount);
+//         return this.price - discount;
+//     }
+// }
+// console.log(product.getPrice());
+// console.log(product.getPriceWidthDiscount());
+
+
+/**
+ * TODO Example #3
+ * Создать объект “вычислитель”, у которого есть числовое свойство
+ * “значение” и методы “удвоить”, “прибавить один”, “отнять один”.
+ * Методы можно вызывать через точку, образуя цепочку методов:
+ */
+
+// const calc = {
+//     value: 1,
+//     getValue() {
+//         return this.value;
+//     },
+//     set() {
+//         return this.value = 0;
+//     },
+//     reset(num) {
+//         this.value = num;
+//     },
+//     plus(num) {
+//         this.value += num;
+//          return this;
+//     },
+//     minus(num) {
+//         this.value -= num;
+//          return this;
+//     },
+//     mylty(num) {
+//         this.value *= num;
+//          return this;
+//     },
+//     delei(num) {
+//         if (this.value === 0) return 0;
+//         this.value /= num;
+//          return this;
+//     }
+// };
+
+// calc.reset(4);
+// calc.plus(5);
+// calc.mylty(2);
+// console.log(calc);
+
+/**
+ * TODO Example #4
+ * Даны объект и функция:
+
+ * Не изменяя функцию или объект, 
+получить результат функции getSquare для объекта sizes
+ */
+
+// let sizes = { width: 5, height: 10 }
+
+// function getSquare() { return this.width * this.height }
+// function twoSguare(width, height) {
+//     this.width = width;
+//     this.height = height;
+// };
+
+// const square = getSquare.call(sizes)
+// console.log(square)
+
+
+/**---------------------------------CLASS------------------------------ */
+// class Blogger{
+//     constructor(name, age, numberOfPosts, topics) {
+//         this.name = name;
+//         this.age = age;
+//         this.numberOfPosts = numberOfPosts;
+//         this.topics = topics;
+//     };
+
+//     getInfo() {
+//         return `User ${this.name} is ${this.age} years old and has ${this.numberOfPosts} posts`;
+//     };
+//     updatePostCount(value) {
+//         this.numberOfPosts = value
+//     }
+// };
+
+// const mango = new Blogger({
+// name: 'mango@mail.com',
+// age: 24,
+// numberOfPosts: 20,
+// topics: ['tech', 'cooking'],
+// });
+// // console.log(mango);
+// // console.log(mango.getInfo()); // User mango@mail.com is 24 years old and has 20 posts
+// // mango.updatePostCount(5);
+
+
+// const poly = new Blogger({
+//   name: 'poly@mail.com',
+//   age: 19,
+//   numberOfPosts: 17,
+//   topics: ['sports', 'gaming', 'health'],
+// });
+
+// console.log(poly); // User poly@mail.com is 19 years old and has 17 posts
+// poly.updatePostCount(4);
+// console.log(poly.getInfo()); // User poly@mail.com is 19 years old and has 21 posts
+
+
+// class Storage{
+//     constructor(items) {
+//         this.items = items
+//     }
+
+//     getItems() {
+//         return this.items
+//     }
+
+//     addItem(item) {
+//         this.items += item
+//     }
+
+//     removeItem(item) {
+//         this.items -= item
+//     }
+// }
+
+// const storage = new Storage(['🍎', '🍋', '🍇', '🍑']);
+
+// const items = storage.getItems();
+// console.table(items); // [ '🍎', '🍋', '🍇', '🍑' ]
+
+// storage.addItem('🍌');
+// console.table(storage.items); // [ '🍎', '🍋', '🍇', '🍑', '🍌' ]
+
+// storage.removeItem('🍋');
+// console.table(storage.items); // [ '🍎', '🍇', '🍑', '🍌' ]
+
+
+// class User{
+//     #login;
+//     #email;
+//     constructor({ login, email }) {
+//         this.#login = login;
+//         this.#email = email;
+//     }
+
+//     get login() {
+//         return this.#login;
+//     }
+//     set login(newLogin) {
+//         this.#login = newLogin
+//     }
+
+//     get email() {
+//         return this.#email;
+//     }
+//     set email(newEmail) {
+//         this.#email = newEmail
+//     }
+// }
+
+
+// const mango = new User({
+//   login: 'Mango',
+//   email: 'mango@dog.woof',
+// });
+
+// console.log(mango)
+// console.log(mango.login); // Mango
+// mango.login = 'Mangodoge';
+// console.log(mango.login); // Mangodoge
+// mango.email = 'ewrerrrr'
+// console.log(mango.email);
+
+
+// class Notes{
+//     static Priority = {
+//   LOW: 'low',
+//   NORMAL: 'normal',
+//   HIGH: 'high'
+// }
+//     constructor(items) {
+//         this.items = items
+//     }
+
+//     addNote(payload) {
+        
+//     }
+// }
+// const myNotes = new Notes([]);
+
+
+// myNotes.addNote({ text: 'Моя первая заметка', priority: Notes.Priority.LOW });
+// console.log(myNotes.items);
+
+// myNotes.addNote({
+//   text: 'Моя вторая заметка',
+//   priority: Notes.Priority.NORMAL,
+// });
+// console.log(myNotes.items);
+
+// myNotes.removeNote('Моя первая заметка');
+// console.log(myNotes.items);
+
+// myNotes.updateNote('Моя вторая заметка', Notes.Priority.HIGH);
+// console.log(myNotes.items);
+/**---------------------------------------ЛІЧИЛЬНИК---------------------------------- */
+
+// const incrementBtn = document.querySelector('button[data-action="increment"]');
+// const decrementBtn = document.querySelector('button[data-action="decrement"]');
+// const valueEl = document.querySelector('[id="value"]');
+
+// const counter = {
+//     id: 0,
+    
+//     increment() {
+//         console.log(this)
+//         this.id += 1;
+//     },
+
+//     decrement() {
+//         this.id -= 1;
+//     },
+
+// };
+
+// incrementBtn.addEventListener('click', function () {
+//     counter.increment();
+//     valueEl.textContent = counter.id;
+// });
+
+// decrementBtn.addEventListener('click', function () {
+//     counter.decrement();
+//     valueEl.textContent = counter.id;
+//      // decrementBtn.textContent = 'gk.c';
+// });
