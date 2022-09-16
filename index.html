@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module * Lesson *</title>
+    <title>PRACTICA</title>
+    <link rel="stylesheet" href="/style.css" />
 </head>
 
 <body>
@@ -14,9 +15,52 @@
         <span id="value">0</span>
         <button type="button" data-action="increment">+1</button>
     </div>
+    <div id="counter-2">
+        <button type="button" data-action="plus">плюс</button>
+        <button type="button" data-action="start">запуск</button>
+        <button type="button" data-action="remove">видалити</button>
+    </div>
+    <div class="js-container"></div>
+
+    
+    <form class="js-form" autocomplete="off">
+        <div role="group">
+            <label>
+                Mail
+                <input type="email" name="email" />
+            </label>
+            <label>
+                Password
+                <input type="password" name="password" />
+            </label>
+        </div>
+
+        <br />
+        <div role="group">
+            <b>Type subscription:</b>
+            <label>
+                <input type="radio" name="subscription" value="free" />
+                Free
+            </label>
+            <label>
+                <input type="radio" name="subscription" value="basic" />
+                Basic
+            </label>
+            <label>
+                <input type="radio" name="subscription" value="pro" />
+                Pro
+            </label>
+        </div>
+
+        <br />
+        <button type="submit">Submit</button>
+    </form>
+
     <script src="js/script-1.js"></script>
     <script src="js/script-2.js"></script>
     <script src="js/script-3.js"></script>
+    <script src="js/products.js" type="module"></script>
+    <script src="js/dom.js"></script>
     <script src="js/script-3cards.js"></script>
 </body>
 
