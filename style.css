@@ -3,3 +3,8 @@
     width: 64px;
     height: 64px;
 }
+
+.tags-active {
+    color: #fff;
+    background-color: blue;
+}
